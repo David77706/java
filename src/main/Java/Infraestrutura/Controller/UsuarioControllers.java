@@ -81,7 +81,7 @@ public class UsuarioControllers extends HttpServlet {
             IOException {
         encabezadosCors(resp);
 
-       Clientes cliente= mapper.readValues(req.getInputStream(),Clientes.class);
+       Clientes cliente= mapper.readValue(req.getInputStream(),Clientes.class);
        service.saveUser(cliente);
 
        resp.setStatus(HttpServletResponse.SC_OK);

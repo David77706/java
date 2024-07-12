@@ -9,9 +9,9 @@ public class DatabaseConnection {
 
    //creo la conexión
 
-    private static final String url="jdbc:mysql//localhost:3306/trabajofinal";
+    private static final String url="jdbc:mysql//localhost:8080/trabajofinal";
     private static final String user="root";
-    private static final String password="";
+    private static final String password="admin";
 
  //creo un método
 
