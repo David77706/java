@@ -59,7 +59,7 @@ public class MySQLPersistenciaImpl implements IPersistencia {
 
         return null;
     }
-    // consulta  todos los clientes
+    // consulta todos los clientes
     @Override
     public ArrayList<Clientes> getAllCliente() {
         String sql="SELECT * From usuario";
