@@ -42,6 +42,7 @@ public class UsuarioControllers extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         encabezadosCors(resp);
+        System.out.println("aca");
        String nombre=req.getParameter("nombre");
 
        if(nombre!=null){
@@ -81,7 +82,7 @@ public class UsuarioControllers extends HttpServlet {
             IOException {
         encabezadosCors(resp);
 
-       Clientes cliente= mapper.readValues(req.getInputStream(),Clientes.class);
+       Clientes cliente= mapper.readValue(req.getInputStream(),Clientes.class);
        service.saveUser(cliente);
 
        resp.setStatus(HttpServletResponse.SC_OK);

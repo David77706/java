@@ -18,7 +18,7 @@ public class MySQLPersistenciaImpl implements IPersistencia {
     //implemento el método de la Interfaz
     @Override
     public void saveUser(Clientes cliente) {
-        String sql="INSERT INTO usuario(id,nombre,clave,correo)value(?,?,?)";
+        String sql="INSERT INTO usuario(id,nombre,clave,correo)values(?,?,?)";
         try {
             PreparedStatement preparador= this.connection.prepareStatement(sql);
             preparador.setString(1,cliente.getNombre());
@@ -33,6 +33,7 @@ public class MySQLPersistenciaImpl implements IPersistencia {
 
     }
 
+    //consulto por usuario
     @Override
     public Clientes findByUsername(String nombre) {
         String sql="SELECT *FROM usuario WHERE nombre=?";
@@ -58,7 +59,7 @@ public class MySQLPersistenciaImpl implements IPersistencia {
 
         return null;
     }
-    // busco todos los clientes
+    // consulta  todos los clientes
     @Override
     public ArrayList<Clientes> getAllCliente() {
         String sql="SELECT * From usuario";
@@ -89,7 +90,7 @@ public class MySQLPersistenciaImpl implements IPersistencia {
 
 
     }
-
+    //borra todos los clientes
     @Override
     public void borrarCliente(int id) {
 
@@ -106,4 +107,4 @@ public class MySQLPersistenciaImpl implements IPersistencia {
 
 
 }
-}
+
