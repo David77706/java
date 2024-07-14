@@ -24,6 +24,7 @@ public class UsuarioService implements IPersistencia {
 
     @Override
     public ArrayList<Clientes> getAllCliente() {
+
         return persistencia.getAllCliente();
     }
 

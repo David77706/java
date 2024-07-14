@@ -18,8 +18,8 @@ import modelos.Clientes;
 
 public class UsuarioControllers extends HttpServlet {
 
-    private ObjectMapper mapper;
-    private UsuarioService service;
+    private  ObjectMapper mapper;
+    private  UsuarioService service;
 
     public UsuarioControllers() {
         this.mapper = new ObjectMapper();
@@ -42,7 +42,7 @@ public class UsuarioControllers extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         encabezadosCors(resp);
-        System.out.println("aca");
+
        String nombre=req.getParameter("nombre");
 
        if(nombre!=null){

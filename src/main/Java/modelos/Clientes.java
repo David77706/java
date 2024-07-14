@@ -10,7 +10,9 @@ public class Clientes {
 
     //creo el constructor vacío
 
-    public Clientes(){}
+    public Clientes(){
+
+    }
 
     public Clientes(int id,String nombre,String clave,String correo){
 

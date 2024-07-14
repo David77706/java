@@ -9,11 +9,17 @@ public interface IPersistencia {
 
 
      void saveUser (Clientes cliente);
+
      //buscar cliente por nombre
+
      Clientes findByUsername(String cliente);
+
      //buscar todos los clientes
+
      ArrayList<Clientes>getAllCliente();
+
      //borrar
+
      void borrarCliente(int id);
 
 
