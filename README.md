@@ -1,13 +1,14 @@
-org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
-	org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
-	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
-	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:936)
-	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
-	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	java.base/java.lang.Thread.run(Thread.java:842)
+El proyecto es de una empresa que personaliza remeras y las vende por la web. Se utilizaron las siguietnes tecnologias Html, CSS,  javaScript y Java.
+
+Comision 24120
+ 
+GRUPO NRO 10
+Integrantes:
+	
+Apellido	Nombre
+
+Gastiarena	Alejandro
+Huallpa	        Madelin 
+Tomasini	Eduardo
+Baravalle	David
+Castaño	        Jhon 
